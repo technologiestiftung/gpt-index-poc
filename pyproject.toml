@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "gpt-index-poc"
+version = "0.1.0"
+description = "Playing with gpt index"
+authors = ["ff6347 <hash@ff6347.email>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "gpt_index_poc"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+gpt-index = "^0.2.12"
+ipython = "^8.8.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.12.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
