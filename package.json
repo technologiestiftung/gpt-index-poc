@@ -1,0 +1,24 @@
+{
+  "name": "gpt-index-poc",
+  "version": "0.1.0",
+  "description": "## General usage [Pattern][pattern] 1. Load in documents (either manually, or through a data loader).  2. Index Construction. 3. \\[Optional, Advanced\\] Building indices on top of other indices  4. Query the index.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ff6347/gpt-index-poc.git"
+  },
+  "keywords": [],
+  "author": "ff6347 <hash@ff6347.email>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ff6347/gpt-index-poc/issues"
+  },
+  "homepage": "https://github.com/ff6347/gpt-index-poc#readme",
+  "devDependencies": {
+    "httpyac": "5.10.2",
+    "just-install": "1.0.10"
+  }
+}

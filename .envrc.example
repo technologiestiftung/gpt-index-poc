@@ -1,0 +1,5 @@
+# shellcheck disable=SC2148
+export OPENAI_API_KEY="sk-123"
+export NOTION_INTEGRATION_TOKEN="secret_456"
+# used for testing api calls to notion usung httpyac not vital
+export HTTPYAC_NOTION_API_KEY=$NOTION_INTEGRATION_TOKEN
