@@ -13,7 +13,7 @@ The index generation should be run once and the query can be run multiple times.
 ## Setup
 
 1. Install [poetry][poetry]
-2. install direnv `brew install direnv`
+2. install `direnv` with this command: `brew install direnv` and set it up do work with your shell
 3. Copy `.envrc.example` to `.envrc` and set the environment variables
 4. Get an openAI API key and set it as an environment variable `OPENAI_API_KEY` in `.envrc`
 5. Create new Notion [integration][notion-integrations]
@@ -41,12 +41,12 @@ python notion/query-index.py
 
 ## Utilities
 
-In the folder notion/utils you can find a script to generate a list of all the page ids your integration has access to. This is useful if you want to generate an index for all the pages in your Notion workspace.
+In the folder notion/utils you can find a script to generate a list of all the page or database ids your integration has access to. This is useful if you want to generate an index for all the pages in your Notion workspace.
 
 ```bash
 poetry shell
 direnv allow
-python notion/utils/list-page-ids.py
+python notion/utils/list-ids.py
 ```
 
 [pattern]: https://gpt-index.readthedocs.io/en/latest/guides/primer.html#general-usage-pattern-of-gpt-index
