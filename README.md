@@ -19,7 +19,7 @@ The index generation should be run once and the query can be run multiple times.
 5. Create new Notion [integration][notion-integrations]
 6. Get a Notion API key and set it as an environment variable `NOTION_INTEGRATION_TOKEN` in `.envrc`
 7. In the upper right corner of a Notion page click the three dots and add a connection to your integration. Every sub page will also be available to the integration.
-8. Get the Notion page ID and add it to the script `notion/generate-index.py` into the `page_ids` list
+8. Get the Notion page ID and set add it to the script `notion/generate-index-from-pages.py` into the `page_ids` list
 9. Make sure to always ignore the generated indices in your git repository e.g. `echo "notion/<YOUR INDEX NAME>.json" >> .gitignore`
 
 ## Usage
@@ -33,7 +33,8 @@ poetry shell
 # allow direnv to set environment variables in the shell
 direnv allow
 # write the index to disk
-python notion/generate-index.py
+# choose one of the two scripts
+python notion/generate-index-[from-database or from-pages].py
 # run the query
 # The script will prompt you for input
 python notion/query-index.py
